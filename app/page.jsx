@@ -1,4 +1,4 @@
-"use client";
+"use client"; 
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import {
@@ -7,15 +7,9 @@ import {
   ChevronRight,
   Database,
   Lock,
-  Settings,
-  FileText,
   LogOut,
   Sun,
   Moon,
-  CreditCard,
-  Globe,
-  Shield,
-  Activity,
 } from "lucide-react";
 import "../styles/index.css";
 
@@ -44,16 +38,20 @@ export default function Page() {
 
   return (
     <div className="relative w-full">
-      {/* Only one Nav component here */}
+      {/* Navbar */}
       <nav className={`p-4 flex items-center justify-between ${isDarkMode ? "bg-gray-900" : "bg-red-800"}`}>
-      <h1 className="text-white text-xl font-extrabold">Vetra</h1>
-
+        <h1 className="text-white text-xl font-extrabold">Vetra</h1>
 
         <div className="flex items-center space-x-4">
-          <button onClick={() => setIsDarkMode(!isDarkMode)} className="text-white hover:text-gray-200 transition-colors duration-200">
+          {/* Dark Mode Toggle */}
+          <button
+            onClick={() => setIsDarkMode(!isDarkMode)}
+            className="text-white hover:text-gray-200 transition-colors duration-200"
+          >
             {isDarkMode ? <Sun size={24} /> : <Moon size={24} />}
           </button>
 
+          {/* User Dropdown */}
           <div className="relative">
             <button
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
@@ -63,7 +61,10 @@ export default function Page() {
             </button>
 
             {isDropdownOpen && (
-              <div ref={dropdownRef} className="absolute right-0 mt-2 w-64 bg-white shadow-lg rounded-lg p-4 z-50 dark:bg-gray-800 dark:text-white">
+              <div
+                ref={dropdownRef}
+                className="absolute right-0 mt-2 w-64 bg-white shadow-lg rounded-lg p-4 z-50 dark:bg-gray-800 dark:text-white"
+              >
                 <div className="space-y-3">
                   <h2 className="font-semibold text-lg">Welcome</h2>
                   <p className="text-sm text-gray-500 dark:text-gray-300">Create an account or login</p>
@@ -84,6 +85,7 @@ export default function Page() {
       </nav>
 
       <div className="flex">
+        {/* Sidebar */}
         <div
           className={`transition-all duration-300 ease-in-out ${isDarkMode ? "bg-gray-800" : "bg-gray-900"} text-white ${isSidebarOpen ? "w-56" : "w-0"} overflow-hidden`}
           style={{ height: "calc(100vh - 60px)" }}
@@ -94,22 +96,25 @@ export default function Page() {
                 <Database size={20} className="mr-2" /> API
               </h2>
               <li className="flex items-center">
-                  <Lock size={18} className="mr-2" />
-                  <Link href="/about" className="hover:underline">About</Link>
-                </li>
+                <Lock size={18} className="mr-2" />
+                <Link href="/about" className="hover:underline">About</Link>
+              </li>
               <ul className="pl-4 mt-2 space-y-2 text-gray-300">
                 <li className="flex items-center">
                   <Lock size={18} className="mr-2" />
                   <Link href="/questions" className="hover:underline">Vision</Link>
                 </li>
-               
               </ul>
             </div>
           )}
         </div>
 
+        {/* Sidebar Toggler */}
         <div className="relative flex items-center">
-          <div className={`h-full transition-all duration-300 ease-in-out ${isSidebarOpen ? "w-2 bg-gradient-to-b from-gray-700 to-gray-400" : "w-1 bg-gray-500"}`} style={{ height: "calc(100vh - 60px)" }}></div>
+          <div
+            className={`h-full transition-all duration-300 ease-in-out ${isSidebarOpen ? "w-2 bg-gradient-to-b from-gray-700 to-gray-400" : "w-1 bg-gray-500"}`}
+            style={{ height: "calc(100vh - 60px)" }}
+          ></div>
 
           <button
             onClick={() => setIsSidebarOpen(!isSidebarOpen)}
@@ -119,6 +124,7 @@ export default function Page() {
           </button>
         </div>
 
+        {/* Main Content */}
         <div className="flex-grow p-4">
           <p className={`${isDarkMode ? "text-white" : "text-gray-700"}`}>Coming Soon...</p>
         </div>

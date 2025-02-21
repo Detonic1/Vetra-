@@ -10,7 +10,7 @@ export default function Questions() {
       <section className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-green-400 to-blue-500 p-6">
         
         {/* Vision Image */}
-        <img 
+        <image 
           src="/images/future-transportation.jpg" 
           alt="Futuristic city with smart transportation" 
           className="w-full h-80 object-cover rounded-lg mb-6"
