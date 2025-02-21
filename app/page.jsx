@@ -100,7 +100,7 @@ export default function Page() {
               <ul className="pl-4 mt-2 space-y-2 text-gray-300">
                 <li className="flex items-center">
                   <Lock size={18} className="mr-2" />
-                  <Link href="/questions" className="hover:underline">Questions</Link>
+                  <Link href="/questions" className="hover:underline">Vision</Link>
                 </li>
                
               </ul>

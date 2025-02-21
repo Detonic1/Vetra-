@@ -7,7 +7,7 @@ export default function Nav() {
     <div className="nav-container">
       <h1><Link href="/">Home</Link></h1>
       <h1><Link href="about">About</Link></h1>
-      <h1><Link href="/questions">Questions</Link></h1>
+      <h1><Link href="/questions">Vision</Link></h1>
       
     
     </div>
