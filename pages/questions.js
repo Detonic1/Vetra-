@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image'; 
 import Link from 'next/link';
 import Nav from "../component/nav";
 import "../styles/categories.css";
@@ -10,10 +11,12 @@ export default function Questions() {
       <section className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-green-400 to-blue-500 p-6">
         
         {/* Vision Image */}
-        <img 
+        <Image 
           src="/images/future-transportation.jpg" 
           alt="Futuristic city with smart transportation" 
           className="w-full h-80 object-cover rounded-lg mb-6"
+          width={1200}  
+          height={480}  
         />
 
         <h1 className="text-4xl font-extrabold text-white mb-6 text-center">
