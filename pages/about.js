@@ -2,6 +2,7 @@ import React from "react";
 import Nav from "../component/nav";
 import "../styles/categories.css";
 import "../styles/globals.css";
+import Image from "next/image"; // Import the Image component from next/image
 
 export default function About() {
   return (
@@ -11,9 +12,11 @@ export default function About() {
         
         {/* Hero Section */}
         <section className="bg-white shadow-lg rounded-2xl p-8 max-w-5xl w-full text-center animate-fadeIn">
-          <img 
+          <Image 
             src="/images/smart-bus-system.jpg" 
             alt="Smart Bus System in a Modern City" 
+            width={1200} 
+            height={480} 
             className="w-full h-64 object-cover rounded-lg mb-6"
           />
           <h1 className="text-4xl font-bold text-gray-800 mb-4">Revolutionizing Public Transportation</h1>
@@ -31,9 +34,11 @@ export default function About() {
             Our system leverages IoT sensors, GPS technology, and data analytics to optimize bus routes, 
             reduce wait times, and improve overall transit efficiency.
           </p>
-          <img 
+          <Image 
             src="/images/live-tracking.jpg" 
             alt="Real-time bus tracking on a smartphone" 
+            width={1200} 
+            height={480} 
             className="w-full h-56 object-cover rounded-lg mb-6"
           />
         </section>
@@ -47,9 +52,11 @@ export default function About() {
             <li>📊 <strong>Data Analytics:</strong> Insights to improve transit planning.</li>
             <li>🌱 <strong>Eco-Friendly Transit:</strong> Optimized routes for fuel efficiency.</li>
           </ul>
-          <img
+          <Image
             src="/images/data-insights.jpg" 
             alt="Analytics dashboard showing bus data insights" 
+            width={1200} 
+            height={480} 
             className="w-full h-56 object-cover rounded-lg mt-6"
           />
         </section>
@@ -67,9 +74,11 @@ export default function About() {
             <li>📉 Reduced traffic congestion</li>
             <li>💰 Cost-effective transit solutions</li>
           </ul>
-          <img 
+          <Image 
             src="/images/smart-scheduling.jpg" 
             alt="Smart scheduling system displaying optimized bus routes" 
+            width={1200} 
+            height={480} 
             className="w-full h-56 object-cover rounded-lg mt-6"
           />
         </section>
@@ -81,9 +90,11 @@ export default function About() {
             We are continuously innovating to bring new advancements such as AI-powered autonomous buses, 
             deeper predictive analytics, and expanded transit networks.
           </p>
-          <img 
+          <Image 
             src="/images/future-bus.jpg" 
             alt="Futuristic city with autonomous buses and smart transport" 
+            width={1200} 
+            height={480} 
             className="w-full h-56 object-cover rounded-lg mb-6"
           />
           <p className="text-gray-600">
