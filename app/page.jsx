@@ -46,7 +46,8 @@ export default function Page() {
     <div className="relative w-full">
       {/* Only one Nav component here */}
       <nav className={`p-4 flex items-center justify-between ${isDarkMode ? "bg-gray-900" : "bg-red-800"}`}>
-        <h1 className="text-white text-xl font-bold">Cortexa</h1>
+      <h1 className="text-white text-xl font-extrabold">Vetra</h1>
+
 
         <div className="flex items-center space-x-4">
           <button onClick={() => setIsDarkMode(!isDarkMode)} className="text-white hover:text-gray-200 transition-colors duration-200">
@@ -92,35 +93,16 @@ export default function Page() {
               <h2 className="text-lg font-semibold flex items-center">
                 <Database size={20} className="mr-2" /> API
               </h2>
+              <li className="flex items-center">
+                  <Lock size={18} className="mr-2" />
+                  <Link href="/about" className="hover:underline">About</Link>
+                </li>
               <ul className="pl-4 mt-2 space-y-2 text-gray-300">
                 <li className="flex items-center">
                   <Lock size={18} className="mr-2" />
-                  <Link href="/authentication" className="hover:underline">Authentication</Link>
+                  <Link href="/questions" className="hover:underline">Questions</Link>
                 </li>
-                <li className="flex items-center">
-                  <Settings size={18} className="mr-2" />
-                  <Link href="/settings" className="hover:underline">Settings</Link>
-                </li>
-                <li className="flex items-center">
-                  <FileText size={18} className="mr-2" />
-                  <Link href="/documentation" className="hover:underline">Documentation</Link>
-                </li>
-                <li className="flex items-center">
-                  <CreditCard size={18} className="mr-2" />
-                  <Link href="/payments" className="hover:underline">Payments</Link>
-                </li>
-                <li className="flex items-center">
-                  <Globe size={18} className="mr-2" />
-                  <Link href="/webhooks" className="hover:underline">Webhooks</Link>
-                </li>
-                <li className="flex items-center">
-                  <Shield size={18} className="mr-2" />
-                  <Link href="/cybersecurity" className="hover:underline">Cyber Security</Link>
-                </li>
-                <li className="flex items-center">
-                  <Activity size={18} className="mr-2" />
-                  <Link href="/Analytics" className="hover:underline">Analytics</Link>
-                </li>
+               
               </ul>
             </div>
           )}

@@ -3,11 +3,12 @@ import Nav from "../component/nav";
 import "../styles/categories.css";
 
 
-export default function cybersecurity() {
+export default function about() {
   return (
     <>
       <Nav/>
-      <h1>Cyber security coming soon ........</h1>
+      <h1>Analytics coming soon........</h1>
     </>
   );
 }
+
