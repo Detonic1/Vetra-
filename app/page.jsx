@@ -126,7 +126,31 @@ export default function Page() {
 
         {/* Main Content */}
         <div className="flex-grow p-4">
-          <p className={`${isDarkMode ? "text-white" : "text-gray-700"}`}>Coming Soon...</p>
+          <h2 className={`${isDarkMode ? "text-white" : "text-gray-700"} text-2xl font-semibold`}>
+            Welcome to Vetra
+          </h2>
+          <p className={`${isDarkMode ? "text-white" : "text-gray-700"} mt-4`}>
+            Vetra is a leading cybersecurity company, focused on providing cutting-edge solutions to protect businesses and individuals from ever-evolving online threats. Our goal is to ensure that your digital presence remains secure and efficient, no matter what.
+          </p>
+          <div className="mt-6">
+            <h3 className={`${isDarkMode ? "text-white" : "text-gray-700"} text-xl font-semibold`}>
+              Our Mission
+            </h3>
+            <p className={`${isDarkMode ? "text-white" : "text-gray-700"} mt-2`}>
+              At Vetra, our mission is to empower individuals and organizations by providing innovative cybersecurity solutions that are proactive, adaptive, and always evolving to stay one step ahead of cyber threats.
+            </p>
+          </div>
+          <div className="mt-6">
+            <h3 className={`${isDarkMode ? "text-white" : "text-gray-700"} text-xl font-semibold`}>
+              Our Services
+            </h3>
+            <ul className="mt-2 space-y-2">
+              <li className={`${isDarkMode ? "text-white" : "text-gray-700"}`}>- Threat Detection & Prevention</li>
+              <li className={`${isDarkMode ? "text-white" : "text-gray-700"}`}>- Data Protection & Encryption</li>
+              <li className={`${isDarkMode ? "text-white" : "text-gray-700"}`}>- Vulnerability Assessment & Management</li>
+              <li className={`${isDarkMode ? "text-white" : "text-gray-700"}`}>- Security Awareness Training</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
