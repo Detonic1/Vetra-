@@ -29,7 +29,7 @@ export default function Nav() {
           <Link href="/about">About</Link>
         </h1>
         <h1 style={{ margin: "0", fontSize: "16px", fontWeight: "500", color: "#ECF0F1" }}>
-          <Link href="/questions">Vision</Link>
+          <Link href="/questions"> Our Vision</Link>
         </h1>
       </div>
     </div>
