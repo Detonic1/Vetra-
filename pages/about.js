@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "../component/nav";
 import "../styles/categories.css";
-import "../styles/globals.css";
+// import "../styles/globals.css";
 import Image from "next/image"; // Import the Image component from next/image
 
 export default function About() {
@@ -13,7 +13,7 @@ export default function About() {
         {/* Hero Section */}
         <section className="bg-white shadow-lg rounded-2xl p-8 max-w-5xl w-full text-center animate-fadeIn">
           <Image 
-            src="/images/smart-bus-system.jpg" 
+            src="/images/Image10.jpg" 
             alt="Smart Bus System in a Modern City" 
             width={1200} 
             height={480} 
@@ -35,7 +35,7 @@ export default function About() {
             reduce wait times, and improve overall transit efficiency.
           </p>
           <Image 
-            src="/images/live-tracking.jpg" 
+            src="/images/Montreal.jpg" 
             alt="Real-time bus tracking on a smartphone" 
             width={1200} 
             height={480} 
@@ -53,7 +53,7 @@ export default function About() {
             <li>🌱 <strong>Eco-Friendly Transit:</strong> Optimized routes for fuel efficiency.</li>
           </ul>
           <Image
-            src="/images/data-insights.jpg" 
+            src="/images/Image7.jpg" 
             alt="Analytics dashboard showing bus data insights" 
             width={1200} 
             height={480} 
@@ -75,7 +75,7 @@ export default function About() {
             <li>💰 Cost-effective transit solutions</li>
           </ul>
           <Image 
-            src="/images/smart-scheduling.jpg" 
+            src="/images/Image1.jpg" 
             alt="Smart scheduling system displaying optimized bus routes" 
             width={1200} 
             height={480} 
@@ -91,7 +91,7 @@ export default function About() {
             deeper predictive analytics, and expanded transit networks.
           </p>
           <Image 
-            src="/images/future-bus.jpg" 
+            src="/images/Image5.jpg" 
             alt="Futuristic city with autonomous buses and smart transport" 
             width={1200} 
             height={480} 

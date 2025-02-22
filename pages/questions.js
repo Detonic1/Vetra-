@@ -12,7 +12,7 @@ export default function Questions() {
         
         {/* Vision Image */}
         <Image 
-          src="/images/future-transportation.jpg" 
+          src="/images/Image10.jpg" 
           alt="Futuristic city with smart transportation" 
           className="w-full h-80 object-cover rounded-lg mb-6"
           width={1200}  
