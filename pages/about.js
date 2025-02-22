@@ -22,7 +22,7 @@ export default function About() {
           <h1 className="text-4xl font-bold text-gray-800 mb-4">Revolutionizing Public Transportation</h1>
           <p className="text-gray-600 leading-relaxed mb-6">
             Our smart bus system enhances urban mobility by integrating real-time tracking, AI-driven scheduling, 
-            and a seamless user experience. Whether you're a passenger, operator, or city planner, our technology 
+            and a seamless user experience. Whether you&apos;re a passenger, operator, or city planner, our technology 
             ensures efficiency, reliability, and sustainability.
           </p>
         </section>
